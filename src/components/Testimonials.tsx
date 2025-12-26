@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Amit Deshmukh",
+    name: "Amit Desale",
     role: "Startup Founder",
     content: "We had a critical bug in our production code that was causing intermittent crashes. FixFrameWorks diagnosed the memory leak in our Java application within hours. Professional, fast, and thorough!",
     avatar: "AD",
