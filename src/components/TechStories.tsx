@@ -50,6 +50,46 @@ const techStories = [
     image: techBluetooth,
     category: "Driver Issues",
   },
+  {
+    id: 6,
+    title: "Virus & Malware Infection",
+    problem: "Computer infected with ransomware, files encrypted and system unusable.",
+    solution: "Removed malware using advanced tools, recovered encrypted files from backup, and installed robust antivirus protection.",
+    image: techCpu,
+    category: "Security",
+  },
+  {
+    id: 7,
+    title: "Data Recovery Emergency",
+    problem: "Accidentally deleted important project files and emptied recycle bin.",
+    solution: "Used professional data recovery software to restore all deleted files. Set up automatic cloud backup to prevent future loss.",
+    image: techBoot,
+    category: "Data Recovery",
+  },
+  {
+    id: 8,
+    title: "Printer Not Responding",
+    problem: "Printer shows offline status and refuses to print any documents.",
+    solution: "Cleared print spooler, updated printer drivers, and reconfigured network settings. Printing works flawlessly now.",
+    image: techBluetooth,
+    category: "Peripherals",
+  },
+  {
+    id: 9,
+    title: "Windows Update Failure",
+    problem: "Windows updates stuck at 0% or failing with error codes repeatedly.",
+    solution: "Reset Windows Update components, cleared update cache, and manually installed pending updates. System now updates normally.",
+    image: techBsod,
+    category: "System Repair",
+  },
+  {
+    id: 10,
+    title: "Overheating & Shutdowns",
+    problem: "Laptop overheating and shutting down unexpectedly during use.",
+    solution: "Cleaned internal fans, replaced thermal paste, and optimized power settings. Temperature now stays within safe limits.",
+    image: techCpu,
+    category: "Hardware",
+  },
 ];
 
 export const TechStories = () => {
@@ -132,11 +172,11 @@ export const TechStories = () => {
                 <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-xl">
                   <div className="grid md:grid-cols-2 gap-0">
                     {/* Image Section */}
-                    <div className="relative h-64 md:h-auto">
+                    <div className="relative h-64 md:h-80 bg-muted/50 flex items-center justify-center">
                       <img
                         src={techStories[currentIndex].image}
                         alt={techStories[currentIndex].title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain p-4"
                       />
                       <div className="absolute top-4 left-4">
                         <span className="px-3 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
