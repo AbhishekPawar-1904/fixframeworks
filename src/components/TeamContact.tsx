@@ -14,7 +14,7 @@ const teamMembers = [
     role: "Developer / UI-UX Designer",
   },
   {
-    name: "Bhushan Desle",
+    name: "Bhushan Desale",
     phone: "8459067656",
     role: "Video Editor",
   },
