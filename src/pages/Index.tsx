@@ -7,7 +7,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
-import TeamContact from "@/components/TeamContact";
+
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -33,7 +33,7 @@ const Index = () => {
           <Testimonials />
           <FAQ />
           <ContactForm />
-          <TeamContact />
+          
         </main>
         <Footer />
       </div>
