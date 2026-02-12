@@ -100,7 +100,7 @@ export const TechStories = () => {
     const timer = setInterval(() => {
       setDirection(1);
       setCurrentIndex((prev) => (prev + 1) % techStories.length);
-    }, 6000);
+    }, 5000);
 
     return () => clearInterval(timer);
   }, []);
@@ -170,23 +170,13 @@ export const TechStories = () => {
                 className="absolute w-full"
               >
                 <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-xl">
-                  <div className="grid md:grid-cols-2 gap-0">
-                    {/* Image Section */}
-                    <div className="relative h-64 md:h-80 bg-muted/50 flex items-center justify-center">
-                      <img
-                        src={techStories[currentIndex].image}
-                        alt={techStories[currentIndex].title}
-                        className="w-full h-full object-contain p-4"
-                      />
-                      <div className="absolute top-4 left-4">
+                    {/* Content Section */}
+                    <div className="p-8 md:p-10 flex flex-col justify-center">
+                      <div className="mb-4">
                         <span className="px-3 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
                           {techStories[currentIndex].category}
                         </span>
                       </div>
-                    </div>
-
-                    {/* Content Section */}
-                    <div className="p-8 md:p-10 flex flex-col justify-center">
                       <div className="flex items-center gap-2 mb-4">
                         <Wrench className="w-6 h-6 text-primary" />
                         <h3 className="text-2xl font-bold text-foreground">
@@ -214,7 +204,6 @@ export const TechStories = () => {
                       </div>
                     </div>
                   </div>
-                </div>
               </motion.div>
             </AnimatePresence>
 
