@@ -9,6 +9,7 @@ import { FAQ } from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import TeamContact from "@/components/TeamContact";
 import Footer from "@/components/Footer";
+import { ChatWidget } from "@/components/ChatWidget";
 
 const Index = () => {
   return (
@@ -36,6 +37,7 @@ const Index = () => {
           <TeamContact />
         </main>
         <Footer />
+        <ChatWidget />
       </div>
     </>
   );
