@@ -32,7 +32,7 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <img src={logo} alt="FixFrameWorks" className="h-12 md:h-14 w-auto mix-blend-lighten" />
+            <img src={logo} alt="FixFrameWorks" className="h-12 md:h-14 w-auto" style={{ filter: 'brightness(1) contrast(1.1)', mixBlendMode: 'screen' }} />
           </a>
 
           {/* Desktop Navigation */}
