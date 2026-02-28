@@ -32,7 +32,7 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <img src={logo} alt="FixFrameWorks" className="h-10 md:h-12 w-auto" />
+            <img src={logo} alt="FixFrameWorks" className="h-12 md:h-14 w-auto mix-blend-lighten" />
           </a>
 
           {/* Desktop Navigation */}
