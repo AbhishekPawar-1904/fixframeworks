@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Code, Film, ArrowRight } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (
@@ -43,16 +44,14 @@ const Hero = () => {
           </motion.div>
 
           {/* Main Headline */}
-          <motion.h1 
+          <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-5xl md:text-7xl lg:text-8xl tracking-tight mb-6"
+            className="mb-6"
           >
-            <span className="text-tech font-extrabold">Fix</span>
-            <span className="text-foreground font-light">Frame</span>
-            <span className="text-creative font-extrabold">Works</span>
-          </motion.h1>
+            <img src={logo} alt="FixFrameWorks" className="h-24 md:h-32 lg:h-40 w-auto mx-auto" />
+          </motion.div>
 
           {/* Subheadline */}
           <motion.p 
