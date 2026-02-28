@@ -96,8 +96,8 @@ const Hero = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"
           >
             {[
-              { value: "500+", label: "Bugs Squashed" },
-              { value: "200+", label: "Videos Edited" },
+              { value: "50+", label: "Bugs Squashed" },
+              { value: "100+", label: "Videos Edited" },
               { value: "24h", label: "Avg. Turnaround" },
               { value: "100%", label: "Satisfaction" },
             ].map((stat, index) => (
